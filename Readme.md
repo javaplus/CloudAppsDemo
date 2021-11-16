@@ -59,7 +59,7 @@ git clone https://github.com/javaplus/CloudAppsDemo.git
 
 Open the code in your IDE (in our case it's VS CODE).  An easy way to open it, is from the command line where you ran the git clone, go into the directory that git created to clone the repo into and run code from there:
 ```
-cd java-tool-training
+cd CloudAppsDemo
 code .
 ```
 NOTE: That there's a period '.' after the "code" command to tell code to open the current directory in VS Code.There are other ways to open VS Code and point it to this directory as well. 
@@ -77,7 +77,7 @@ You'll notice there are NOT multiple projects, but instead just one project. Wit
 
 The first guideline for 12 factor apps is to have one app in one repo (see [Codebase](https://12factor.net/codebase)). So there's one codebase or repo for the app.  If your app is spread across multiple repos it would greatly complicate the maintenance as well as the build and release process. But also, by having smaller sized applications, the repos are much easier to navigate, maintain, and understand which can greatly reduce the introduction of bugs and increase the speed to market for new changes.
 
-[Spring Boot](https://spring.io/projects/spring-boot) makes it easy to create stand-alone java applications that take advantage of a popular set of Java libraries called Spring.
+[Spring Boot](https://spring.io/projects/spring-boot) makes it easy to create stand-alone java applications that take advantage of a popular set of nn libraries called Spring.
 
 This simple SpringBoot app was initially created by using the [Spring Initializr](https://start.spring.io/).  Spring Initializr is an online tool to quickly help initialize your SpringBoot application by generating a starter project with the dependencies/libraries you need.
 
@@ -132,7 +132,7 @@ To run the application go to the command prompt and run java passing in the jar 
 **NOTE:** By default, Spring Boot using port 8080 to run.  So, be sure that port is free.
 
 ```
-java -jar ./target/base-app-0.0.1-SNAPSHOT.jar
+java -jar ./target/barry-app-0.0.1-SNAPSHOT.jar
 ```
 This should start the application and you should see a message that ends with "Started BaseAppApplication in \<some time\>" 
 
@@ -284,7 +284,7 @@ You will see additional downloads to get the new jars.
 After the build is complete, run the app again by issuing this command:
 
 ```
-java -jar ./target/base-app-0.0.1-SNAPSHOT.jar
+java -jar ./target/barry-app-0.0.1-SNAPSHOT.jar
 
 ```
 Test again by going to [http://localhost:8080/hello](http://localhost:8080/hello).
