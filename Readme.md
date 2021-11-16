@@ -52,7 +52,7 @@ The Twelve-Factor App methodology was drafted by developers at [Heroku](https://
 Make sure you have the prerequisites installed above.  Clone the repo containing the code (which is this repo) to get the code local.  
 
 ```
-git clone TDB
+git clone https://github.com/javaplus/CloudAppsDemo.git
 ```
 
 ## Open Workspace
