@@ -1,0 +1,28 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: barryapp-dev
+  labels:
+    app: barryapp-dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: barryapp-dev
+  template:
+    metadata:
+      labels:
+        app: barryapp-dev
+    spec:
+      containers:
+        - name: barryboot
+          image: barry-simple-boot:1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8080
+        - name: httpd        
+          image: barry-httpd:1
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 443 
