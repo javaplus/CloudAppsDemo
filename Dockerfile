@@ -1,4 +1,5 @@
 # start with a jdk image 
+# Recommended openjdk:11
 
 
 
