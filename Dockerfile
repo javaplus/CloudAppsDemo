@@ -1,4 +1,4 @@
-# start with a jdk image 
+# start from a jdk image 
 # Recommended openjdk:11
 
 
@@ -11,4 +11,5 @@
 
 
 # Run/Start the application
+# Use the CMD to issue the starting command.
 # Issue the right command to start the app here.
